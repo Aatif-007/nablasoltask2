@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select a View</title>
+    <link rel="stylesheet" href="./styles//thirdpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <div class="dialog">
+            <h2>Select a view</h2>
+            <p>You can also customize this view in settings</p>
+            <div class="view-options">
+                <div class="view-option ">
+                    <div class="view-option img" id="list-view">
+                        <img src="./assets/listing.png" alt="">
+                    </div>
+                    <span>List</span>
+                </div>
+                <div class="view-option ">
+                    <div class="view-option img" id="board-view">
+                        <img src="./assets/kanban.png" alt="">
+                    </div>
+                    <span>Board</span>
+                </div>
+            </div>
+            <div class="form-navigation">
+                <button type="button" id="back-button" onclick="goBack()"> <i class="fa-solid fa-angle-left"></i>Back</button>
+            </div>
+            <div class="form-navigation2">
+                <button type="submit" id="next-button" onclick="goNext()">Next</button>
+            </div>
+            <div class="progress-container">
+                <div class="progress-dot "></div>
+                <div class="progress-dot "></div>
+                <div class="progress-dot active"></div>
+                <div class="progress-dot "></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/thirdpage.js"></script>

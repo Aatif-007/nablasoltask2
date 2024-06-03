@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Manage</title>
+    <link rel="stylesheet" href="./styles//fourthpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <div class="dialog">
+            <h2>Select a view</h2>
+            <p>Don't panic - You can also customize this permission from settin </p>
+           
+            <div class="content">
+                <div  id="everyone" class="everyone-section content-section">
+                        <div class="everyone-section-img img-section">
+                            <img src="./assets/group.png" alt="">
+                        </div>
+                        <div class="everyone-section-text content-section-text">
+                            <h2>Everyone</h2>
+                            <p>All user can now see it, but guests cannot access the project.</p>
+                        </div>
+                </div>
+                <div id="admin" class="only-admin-section content-section">
+                        <div class="only-admin-section-img img-section">
+                            <img src="./assets/user.png" alt="">
+                        </div>
+                        <div class="only-admin-section-text content-section-text">
+                            <h2>Only Admin's</h2>
+                            <p>Only admins can manage everything.</p>
+                        </div>
+                </div>
+                <div id="people" class="only-specific-section content-section">
+                        <div class="only-specific-section-img img-section">
+                            <img src="./assets/two user.png" alt="">
+                        </div>
+                        <div class="only-specific-section-text content-section-text">
+                            <h2>Only to Specific people</h2>
+                            <p>Only some specific people can able to see it.</p>
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="form-navigation">
+                <button type="button" id="back-button" onclick="goBack()"> <i class="fa-solid fa-angle-left"></i>Back</button>
+            </div>
+            <div class="form-navigation2">
+                <button type="submit" id="next-button" onclick="goNext()">Next</button>
+            </div>
+            <div class="progress-container">
+                <div class="progress-dot "></div>
+                <div class="progress-dot "></div>
+                <div class="progress-dot "></div>
+                <div class="progress-dot active "></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/fourthpage.js"></script>
